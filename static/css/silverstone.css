@@ -52,7 +52,7 @@ h2 {
 .full-width {
   width: 100%;
   margin: 0;
-  padding: 0;
+  padding: 25px;
 }
 
 .blue_green_background {
@@ -67,19 +67,19 @@ h2 {
   box-sizing: border-box;
 }
 
-.dark_row {
+.dark-row {
   background-color: #274029;
 }
 
-.darkish_row {
+.darkish-row {
   background-color: #7b8ac2;
 }
 
-.med_row {
+.med-row {
   background-color: #32746d;
 }
 
-.light_row {
+.light-row {
   background-color: #ccc8c0;
 }
 
@@ -90,8 +90,31 @@ h2 {
   text-align:right;
 }
 
+.navbar-brand {
+  color: #d5d2cb;
+}
+
+.navbar-brand:hover {
+  background-color: #7b8ac2;
+  color: #d5d2cb;
+}
+
+.nav-link {
+  color: #d5d2cb;
+}
+
+.nav-link:hover {
+  background-color: #7b8ac2;
+  color: #d5d2cb;
+}
+
 
 /*------------ base.html footer CSS ------------*/
+
+footer {
+  padding: 20px;
+  color: #d5d2cb;
+}
 
 #footer-contact-info {
   justify-content: left;
@@ -101,6 +124,11 @@ h2 {
 #footer-logo {
   justify-content: center;
   text-align: center;
+  align-items: end;
+}
+
+#footer-logo-wrapper>* {
+  padding-top: 15px;
 }
 
 #footer-nav {
@@ -127,3 +155,7 @@ h2 {
     text-align: center;
   }
 }
+
+/*------------ landing.html CSS ------------*/
+
+
