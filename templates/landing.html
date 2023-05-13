@@ -1,20 +1,70 @@
 <!-- Home page for Silverstone Contracting -->
-{% extends 'base.html' %}
-
-
-{% block body %}
+{% extends 'base.html' %} {% block body %}
 
 <div class="container-fluid" id="landing-header">
-    <div class="row full-width blue_green_background"><br>
-        <h1>Silverstone</h1>
-        <h2>Contracting</h2>
-    </div>
+  <div class="row full-width blue-green-background">
+    <h1>Silverstone</h1>
+    <h2>Contracting</h2>
+  </div>
 
-    <div class="row">
-        <h3>Welcome to Silverstone Contracting, where we craft your vision with a silver touch!</h3>
-        <p>Silverstone means craftsmanship, exceptional customer service, and attention to detail. From small repairs to major projects, we take pride in our work and strive to exceed our clients' expectations every step of the way. At Silverstone Contracting, we understand that your home is your most valuable asset, and we are committed to helping you make the most of it. Contact us today to schedule a consultation and let us bring your vision to life.</p>
-    </div>
+  <div class="row">
+    <h3>
+      Welcome to Silverstone Contracting, where we craft your vision with a
+      silver touch!
+    </h3>
+    <p>
+      Silverstone means craftsmanship, exceptional customer service, and
+      attention to detail. From small repairs to major projects, we take pride
+      in our work and strive to exceed our clients' expectations every step of
+      the way. At Silverstone Contracting, we understand that your home is your
+      most valuable asset, and we are committed to helping you make the most of
+      it. Contact us today to schedule a consultation and let us bring your
+      vision to life.
+    </p>
+  </div>
 </div>
-{% endblock %}
 
+<div class="container" id="landing-content">
+  <div class="row d-flex justify-content-around align-items-center">
+    <div class="col-4">
+      <img class="landing-img"
+        src="static/img/look-up-look-down-photography--o7ASOHDV9E-unsplash-300x225.jpg"
+      />
+    </div>
+    <div class="col-8">
+      <div class="text-bubble">
+        <span>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
+          dolorem a voluptate, quam aspernatur repudiandae sit commodi
+          temporibus, suscipit officiis odio, tenetur laborum fuga dolores quo
+          animi voluptatum. Et unde, molestiae atque esse facilis nobis autem
+          quibusdam quisquam, tempora maiores, labore quis eveniet. Voluptatum
+          eius modi dolorem cumque exercitationem numquam.
+        </span>
+      </div>
+    </div>
+  </div>
 
+  <div class="row d-flex justify-content-around align-items-center">
+    <div class="col-8">
+      <div class="text-bubble">
+        <span>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
+          dolorem a voluptate, quam aspernatur repudiandae sit commodi
+          temporibus, suscipit officiis odio, tenetur laborum fuga dolores quo
+          animi voluptatum. Et unde, molestiae atque esse facilis nobis autem
+          quibusdam quisquam, tempora maiores, labore quis eveniet. Voluptatum
+          eius modi dolorem cumque exercitationem numquam.
+        </span>
+      </div>
+      </div>
+
+      <div class="col-4">
+        <img class="landing-img"
+          src="static/img/look-up-look-down-photography--o7ASOHDV9E-unsplash-300x225.jpg"
+        />
+      </div>
+    </div>
+  </div>
+  {% endblock %}
+</div>

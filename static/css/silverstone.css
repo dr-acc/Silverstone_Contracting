@@ -1,14 +1,20 @@
+/* CSS for Silverstone Landscaping Web Page */
+
+/* ------------ document / utility CSS ------------ */
+
 html {
   font-family: "Figtree", sans-serif;
   font-family: "Poppins", sans-serif;
   height: 100%;
   color: #274029;
   font-size: large;
-  background-color: #eaf4f4;
+  /* background-color: #eaf4f4; */
 }
 
 body {
-  margin: 0;
+  background-image: url("static/img/yellow-flower-bg.png");
+  background-repeat: repeat;
+  /* height: 100vh; */
 }
 
 p {
@@ -55,18 +61,6 @@ h2 {
   padding: 25px;
 }
 
-.blue_green_background {
-  background: radial-gradient(circle, #32746d, #9ec5ab);
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin: 0;
-  text-align: center;
-  text-shadow: 2px 2px #01200f;
-  letter-spacing: 2px;
-  width: 100%;
-  box-sizing: border-box;
-}
-
 .dark-row {
   background-color: #274029;
 }
@@ -87,7 +81,7 @@ h2 {
 
 #navbarNav {
   justify-content: right;
-  text-align:right;
+  text-align: right;
 }
 
 .navbar-brand {
@@ -108,17 +102,19 @@ h2 {
   color: #d5d2cb;
 }
 
-
 /*------------ base.html footer CSS ------------*/
 
 footer {
-  padding: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 0px;
   color: #d5d2cb;
 }
 
 #footer-contact-info {
   justify-content: left;
   text-align: left;
+  padding-left: 0px;
 }
 
 #footer-logo {
@@ -127,7 +123,7 @@ footer {
   align-items: end;
 }
 
-#footer-logo-wrapper>* {
+#footer-logo-wrapper > * {
   padding-top: 15px;
 }
 
@@ -158,4 +154,41 @@ footer {
 
 /*------------ landing.html CSS ------------*/
 
+.blue-green-background {
+  background: radial-gradient(circle, #32746d, #9ec5ab);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  text-align: center;
+  text-shadow: 2px 2px #01200f;
+  letter-spacing: 2px;
+  width: 100%;
+  box-sizing: border-box;
+}
 
+#landing-header {
+  margin: 0px;
+  padding: 0px;
+}
+
+#landing-content>.row {
+  margin: 100px 0px;
+  padding: 40px;
+  border: 1px black;
+  border-radius: 5px;
+  background-color: #49672d;
+}
+
+.landing-img {
+  width: 90%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.text-bubble {
+  border: solid 2px black;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: #6e7e42;
+  color: #d5d2cb;
+}
