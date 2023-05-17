@@ -1,13 +1,15 @@
 <!-- Home page for Silverstone Contracting -->
 {% extends 'base.html' %} {% block body %}
 
-<div class="container-fluid" id="landing-header">
-  <div class="row full-width blue-green-background">
-    <h1>Silverstone</h1>
-    <h2>Contracting</h2>
+<div class="container-fluid px-0" id="landing-header">
+  <div class="row blue-green-background">
+    <h1>
+      Silverstone<br />
+      Contracting
+    </h1>
   </div>
 
-  <div class="row">
+  <div class="row px-5 g-3">
     <h3>
       Welcome to Silverstone Contracting, where we craft your vision with a
       silver touch!
@@ -27,7 +29,8 @@
 <div class="container" id="landing-content">
   <div class="row d-flex justify-content-around align-items-center">
     <div class="col-4">
-      <img class="landing-img"
+      <img
+        class="landing-img"
         src="static/img/look-up-look-down-photography--o7ASOHDV9E-unsplash-300x225.jpg"
       />
     </div>
@@ -57,14 +60,14 @@
           eius modi dolorem cumque exercitationem numquam.
         </span>
       </div>
-      </div>
+    </div>
 
-      <div class="col-4">
-        <img class="landing-img"
-          src="static/img/look-up-look-down-photography--o7ASOHDV9E-unsplash-300x225.jpg"
-        />
-      </div>
+    <div class="col-4">
+      <img
+        class="landing-img"
+        src="static/img/look-up-look-down-photography--o7ASOHDV9E-unsplash-300x225.jpg"
+      />
     </div>
   </div>
-  {% endblock %}
 </div>
+{% endblock %}

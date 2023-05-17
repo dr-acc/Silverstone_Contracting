@@ -12,9 +12,12 @@ html {
 }
 
 body {
-  background-image: url("static/img/yellow-flower-bg.png");
-  background-repeat: repeat;
-  /* height: 100vh; */
+  background-image: url("/static/img/yellow-flower-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: auto;
+  background-attachment:fixed;
 }
 
 p {
@@ -56,9 +59,12 @@ h2 {
 }
 
 .full-width {
-  width: 100%;
-  margin: 0;
-  padding: 25px;
+  width: 100vw;
+  position: relative;
+  /* left: 50%;
+  right: 50%; */
+  margin-left: -50vw;
+  margin-right: -50vw;
 }
 
 .dark-row {
@@ -154,6 +160,9 @@ footer {
 
 /*------------ landing.html CSS ------------*/
 
+#landing-header {
+}
+
 .blue-green-background {
   background: radial-gradient(circle, #32746d, #9ec5ab);
   background-repeat: no-repeat;
@@ -164,11 +173,6 @@ footer {
   letter-spacing: 2px;
   width: 100%;
   box-sizing: border-box;
-}
-
-#landing-header {
-  margin: 0px;
-  padding: 0px;
 }
 
 #landing-content>.row {
