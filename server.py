@@ -28,6 +28,30 @@ def landing():
 
     return render_template("landing.html")
 
+@app.route("/about")
+def about():
+    """Return about page."""
+
+    return render_template("about.html")
+
+@app.route("/services")
+def services():
+    """Return services page."""
+
+    return render_template("services.html")
+
+@app.route("/projects")
+def projects():
+    """Return projects page."""
+
+    return render_template("projects.html")
+
+@app.route("/contact")
+def contact():
+    """Return contact page."""
+
+    return render_template("contact.html")
+
 
 
 if __name__ == "__main__":

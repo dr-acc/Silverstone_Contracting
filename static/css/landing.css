@@ -1,0 +1,77 @@
+/*------------ landing.html CSS ------------*/
+
+
+/* ------------ header CSS ------------ */
+
+#landing-header div {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#landing-header div h1 {
+  width: 11em;
+  padding: 0.3em;
+}
+
+#landing-mission-statement h2 {
+  margin: 1em;
+  max-width: 25em;
+  padding: 1em;
+  text-align: center;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+}
+
+#landing-mission-statement p {
+  max-width: 45em;
+  padding: 1em;
+  text-align: center;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+}
+
+.blue-green-background {
+  background: radial-gradient(circle, #32746d, #9ec5ab);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  text-align: center;
+  text-shadow: 2px 2px #01200f;
+  letter-spacing: 2px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* ------------ content CSS ------------ */
+
+#landing-content > .row {
+  margin: 50px 0px;
+  padding: 40px;
+  border: 1px black;
+  border-radius: 5px;
+  background-color: #49672dd6;
+
+.landing-img {
+  width: 90%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 1.5em;
+}
+
+.text-bubble {
+  border-radius: 5px;
+  padding: 1.5em;
+  /* background-color: #6e7e42; */
+  color: #d5d2cb;
+  box-shadow: 0 0 0 5px #32746d, 0 0 0 10px blueviolet;
+}
+
+@media (max-width: 768px) {
+  #landing-content {
+    align-items: center;
+  }
+
+  .text-bubble {
+    text-align: center;
+  }
+}

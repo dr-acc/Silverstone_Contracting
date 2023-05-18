@@ -1,20 +1,28 @@
 <!-- Home page for Silverstone Contracting -->
-{% extends 'base.html' %} {% block body %}
+{% extends 'base.html' %} 
+
+{% block title %}
+Silverstone Contracting
+{% endblock %}
+
+{% block head %}
+<link rel="stylesheet" href="/static/css/landing.css" />
+{% endblock %}
+
+
+{% block body %}
 
 <div class="container-fluid px-0" id="landing-header">
   <div class="row blue-green-background">
-    <h1>
-      Silverstone<br />
-      Contracting
-    </h1>
+    <h1>Silverstone Contracting</h1>
   </div>
 
-  <div class="row px-5 g-3">
-    <h3>
+  <div class="row px-5 g-3" id="landing-mission-statement">
+    <h2 class="gray-transparency">
       Welcome to Silverstone Contracting, where we craft your vision with a
       silver touch!
-    </h3>
-    <p>
+    </h2>
+    <p class="gray-transparency">
       Silverstone means craftsmanship, exceptional customer service, and
       attention to detail. From small repairs to major projects, we take pride
       in our work and strive to exceed our clients' expectations every step of
@@ -27,42 +35,36 @@
 </div>
 
 <div class="container" id="landing-content">
-  <div class="row d-flex justify-content-around align-items-center">
-    <div class="col-4">
+  <div class="row d-flex flex-wrap justify-content-around align-items-center">
+    <div class="col-md-5 col-12 order-1 landing-img-wrapper">
       <img
         class="landing-img"
         src="static/img/look-up-look-down-photography--o7ASOHDV9E-unsplash-300x225.jpg"
       />
     </div>
-    <div class="col-8">
-      <div class="text-bubble">
-        <span>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
-          dolorem a voluptate, quam aspernatur repudiandae sit commodi
-          temporibus, suscipit officiis odio, tenetur laborum fuga dolores quo
-          animi voluptatum. Et unde, molestiae atque esse facilis nobis autem
-          quibusdam quisquam, tempora maiores, labore quis eveniet. Voluptatum
-          eius modi dolorem cumque exercitationem numquam.
-        </span>
+    <div class="col-md-7 col-12 order-2">
+      <div class="text-bubble med-row">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
+          blanditiis, repellat sapiente possimus, sed beatae qui distinctio odit
+          eaque fugiat eum laboriosam. Incidunt, placeat reprehenderit!
+        </p>
       </div>
     </div>
   </div>
 
-  <div class="row d-flex justify-content-around align-items-center">
-    <div class="col-8">
-      <div class="text-bubble">
-        <span>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
-          dolorem a voluptate, quam aspernatur repudiandae sit commodi
-          temporibus, suscipit officiis odio, tenetur laborum fuga dolores quo
-          animi voluptatum. Et unde, molestiae atque esse facilis nobis autem
-          quibusdam quisquam, tempora maiores, labore quis eveniet. Voluptatum
-          eius modi dolorem cumque exercitationem numquam.
-        </span>
+  <div class="row d-flex flex-wrap justify-content-around align-items-center">
+    <div class="col-md-7 order-md-1 col-12 order-2">
+      <div class="text-bubble med-row">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam
+          inventore obcaecati ad iusto quae itaque nulla harum corrupti, autem
+          illo eos eligendi qui ducimus delectus.
+        </p>
       </div>
     </div>
 
-    <div class="col-4">
+    <div class="col-md-5 order-md-2 col-12 order-1 landing-img-wrapper">
       <img
         class="landing-img"
         src="static/img/look-up-look-down-photography--o7ASOHDV9E-unsplash-300x225.jpg"
