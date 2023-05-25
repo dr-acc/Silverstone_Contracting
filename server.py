@@ -55,6 +55,6 @@ def contact():
 
 
 if __name__ == "__main__":
-    from model import connect_to_db
-    connect_to_db(app)
+    # from model import connect_to_db
+    # connect_to_db(app)
     app.run(host="0.0.0.0", debug=True)

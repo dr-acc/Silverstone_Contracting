@@ -67,6 +67,10 @@ h2 {
   background-color: #274029e9;
 }
 
+.green-transparency {
+  background-color: #49672dd6;
+}
+
 .darkish-row {
   background-color: #7b8ac2;
 }
@@ -89,5 +93,10 @@ h2 {
 
 .light-font {
   color: #d5d2cb;
+}
+
+.large-container-default {
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
 }
 

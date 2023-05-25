@@ -12,12 +12,19 @@
     text-align: center;
     align-items: center;
     margin: 0em 2em 2em 2em;
-    border: solid black 2px;
-    border-radius: 3px;
     padding: 1em;
 }
 
 #contact-banner p {
-    /* padding-top: .5em; */
     margin: 1em;
+}
+
+/* ------------ contact body ------------ */
+
+#contact-text-header {
+    padding: .5em;
+}
+
+#contact-text-body {
+    padding: 1em;
 }
