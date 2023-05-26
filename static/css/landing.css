@@ -3,14 +3,18 @@
 
 /* ------------ header CSS ------------ */
 
-#landing-header div {
+/* #landing-header div {
   flex-wrap: wrap;
   justify-content: center;
-}
+} */
 
 #landing-header div h1 {
   width: 11em;
   padding: 0.3em;
+}
+
+#landing-mission-statement {
+  display: flex;
 }
 
 #landing-mission-statement h2 {

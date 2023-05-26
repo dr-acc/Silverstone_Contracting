@@ -31,7 +31,76 @@
     color: #d5d2cb;
     border-radius: 7px;
   }
+
+ /*------------ base.html call-to-action CSS ------------*/
   
+  #call-to-action {
+    padding: 1em;
+  }
+
+  @media (max-width: 768px) {
+    #call-to-action {
+      padding: 1em 1em 0em 1em;
+    }
+  }
+
+  .cta-btn {
+    color: #d5d2cb;
+    background-color: lightcoral;
+    font-size: 60px;
+    padding: .25em;
+    text-decoration: none;
+  }
+
+  .cta-btn:hover {
+    background-color: #7b8ac2;
+  }
+
+  .cta-btn:active {
+    box-shadow: 1px 1px 5px black;
+    transform: translateY(3px);
+  }
+
+  #call-to-action p {
+    font-size: 50px;
+    align-self: center;
+    margin: 1em;
+    text-align: center;
+  }
+  
+  @media (max-width: 1750px) {
+    .cta-btn {
+      font-size: 40px;
+      padding: .5em;
+    }
+
+    #call-to-action p {
+      font-size: 35px;
+    }
+  }
+
+  @media (max-width: 1080px) {
+    .cta-btn {
+      font-size: 35px;
+      padding: .5em;
+    }
+
+    #call-to-action p {
+      font-size: 27px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .cta-btn {
+      font-size: 35px;
+      padding: .5em;
+    }
+
+    #call-to-action p {
+      font-size: 25px;
+    }
+  }
+
   /*------------ base.html footer CSS ------------*/
   
   footer {
