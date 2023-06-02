@@ -3,30 +3,19 @@
 /* ------------ document / utility CSS ------------ */
 
 html {
-  font-family: "Figtree", sans-serif;
-  font-family: "Poppins", sans-serif;
-  /* height: 100%; */
+  /* font-family: "Figtree", sans-serif;
+  font-family: "Poppins", sans-serif; */
+  font-family: 'Lora', serif;
   color: #274029;
   font-size: large;
-  /* background-color: #eaf4f4; */
   overflow-y: scroll;
 }
 
 body {
-  background-image: url("/static/img/yellow-flower-bg.png");
+  background-image: url("/static/img/sergey-shmidt-koy6FlCCy5s-unsplash.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-}
-
-p {
-  font-family: "Poppins", sans-serif;
-}
-
-h1 /*, h2 */ {
-  color: #d5d2cb;
-  font-family: "Georgia", serif;
-  font-weight: bold;
 }
 
 h1 {
@@ -45,16 +34,6 @@ h2 {
     font-size: 30px;
   }
 }
-
-/* @media (max-width: 576px) {
-  h1 {
-    font-size: 30px;
-  }
-
-  h2 {
-    font-size: 20px;
-  }
-} */
 
 /* ------------ utility classes ------------ */
 
@@ -84,7 +63,8 @@ h2 {
 }
 
 .gray-transparency {
-  background-color: #ccc8c095;
+  /* background-color: #ccc8c0e0; */
+  background-color: rgba(245, 245, 245, 0.75);
 }
 
 .orange-banner {

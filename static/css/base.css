@@ -32,22 +32,97 @@
     border-radius: 7px;
   }
 
- /*------------ base.html call-to-action CSS ------------*/
-  
-  #call-to-action {
-    padding: 1em;
+  .logo {
+    font-size: 40px;
   }
 
   @media (max-width: 768px) {
+    .logo {font-size: 25px;}
+  }
+
+  @media (max-width: 400px) {
+    .logo {font-size: 18px;}
+  }
+
+  .shimmer {
+    transition: 0.3s
+   }
+   
+  .shimmer:hover {
+      text-align: center;
+      transition: 0.3s;
+      color: rgba(255,255,255,0.1);
+      background: -webkit-gradient(linear, left top, right top, from(#274029e9), to(#274029e9), color-stop(0.5, #fff));
+      background: -moz-gradient(linear, left top, right top, from(#274029e9), to(#274029e9), color-stop(0.5, #fff));
+      background: gradient(linear, left top, right top, from(#274029e9), to(#274029e9), color-stop(0.5, #fff));
+      -webkit-background-size: 125px 100%;
+      -moz-background-size: 125px 100%;
+      background-size: 125px 100%;
+      -webkit-background-clip: text;
+      -moz-background-clip: text;
+      background-clip: text;
+      -webkit-animation-name: shimmer;
+      -moz-animation-name: shimmer;
+      animation-name: shimmer;
+      -webkit-animation-duration: 2s;
+      -moz-animation-duration: 2s;
+      animation-duration: 2s;
+      -webkit-animation-iteration-count: 1;
+      -moz-animation-iteration-count: 1;
+      animation-iteration-count: 1;
+      background-repeat: no-repeat;
+      background-position: 0 0;
+    }
+    @-moz-keyframes shimmer {
+      0% {
+        background-position: bottom left;
+      }
+      100% {
+        background-position: top right;
+      }
+    }
+    @-webkit-keyframes shimmer {
+      0% {
+        background-position: bottom left;
+      }
+      100% {
+        background-position: top right;
+      }
+    }
+    @-o-keyframes shimmer {
+      0% {
+        background-position: bottom left;
+      }
+      100% {
+        background-position: top right;
+      }
+    }
+    @keyframes shimmer {
+      0% {
+        background-position: bottom left;
+      }
+      100% {
+        background-position: top right;
+      }
+    }
+
+
+ /*------------ base.html call-to-action CSS ------------*/
+
+ #call-to-action {
+  padding: .5em;
+ }
+
+  @media (max-width: 768px) {
     #call-to-action {
-      padding: 1em 1em 0em 1em;
+      padding: .5em;
     }
   }
 
   .cta-btn {
     color: #d5d2cb;
     background-color: lightcoral;
-    font-size: 60px;
+    font-size: 38px;
     padding: .25em;
     text-decoration: none;
   }
@@ -62,42 +137,42 @@
   }
 
   #call-to-action p {
-    font-size: 50px;
+    font-size: 35px;
     align-self: center;
-    margin: 1em;
+    margin: .5em;
     text-align: center;
   }
   
   @media (max-width: 1750px) {
     .cta-btn {
-      font-size: 40px;
+      font-size: 30px;
       padding: .5em;
     }
 
     #call-to-action p {
-      font-size: 35px;
+      font-size: 32px;
     }
   }
 
   @media (max-width: 1080px) {
     .cta-btn {
-      font-size: 35px;
-      padding: .5em;
+      font-size: 25px;
+      padding: .25em;
     }
 
     #call-to-action p {
-      font-size: 27px;
+      font-size: 20px;
     }
   }
 
   @media (max-width: 768px) {
     .cta-btn {
-      font-size: 35px;
+      font-size: 20px;
       padding: .5em;
     }
 
     #call-to-action p {
-      font-size: 25px;
+      font-size: 0px;
     }
   }
 

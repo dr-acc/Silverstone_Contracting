@@ -1,6 +1,5 @@
 /*------------ landing.html CSS ------------*/
 
-
 /* ------------ header CSS ------------ */
 
 /* #landing-header div {
@@ -8,13 +7,13 @@
   justify-content: center;
 } */
 
-#landing-header div h1 {
+.landing-header div h1 {
   width: 11em;
   padding: 0.3em;
 }
 
 #landing-mission-statement {
-  display: flex;
+  /* display: flex; */
 }
 
 #landing-mission-statement h2 {
@@ -28,9 +27,22 @@
   max-width: 45em;
   padding: 1em;
   text-align: center;
+  font-size: 25px;
 }
 
-.blue-green-background {
+div.c-wrapper{
+  width: 864px; 
+  margin: auto;
+}
+
+@media (max-width: 1080px){
+  div.c-wrapper{
+    width: 80%; 
+    margin: auto;
+  }
+}
+
+/* .blue-green-background {
   background: radial-gradient(circle, #32746d, #9ec5ab);
   background-repeat: no-repeat;
   background-size: cover;
@@ -40,19 +52,20 @@
   letter-spacing: 2px;
   width: 100%;
   box-sizing: border-box;
-}
+} */
 
 /* ------------ content CSS ------------ */
 
 #landing-content > .row {
   margin: 50px 0px;
   padding: 40px;
+}
 
 .text-bubble {
   border-radius: 5px;
   padding: 1.5em;
   color: #d5d2cb;
-  box-shadow: 0 0 0 5px #32746d, 0 0 0 10px blueviolet;
+  box-shadow: 0 0 0 5px slategrey, 0 0 0 10px gray, 0 0 0 15px gainsboro;
 }
 
 @media (max-width: 768px) {
