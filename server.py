@@ -28,9 +28,33 @@ def landing():
 
     return render_template("landing.html")
 
+@app.route("/about")
+def about():
+    """Return about page."""
+
+    return render_template("about.html")
+
+@app.route("/services")
+def services():
+    """Return services page."""
+
+    return render_template("services.html")
+
+@app.route("/projects")
+def projects():
+    """Return projects page."""
+
+    return render_template("projects.html")
+
+@app.route("/contact")
+def contact():
+    """Return contact page."""
+
+    return render_template("contact.html")
+
 
 
 if __name__ == "__main__":
-    from model import connect_to_db
-    connect_to_db(app)
+    # from model import connect_to_db
+    # connect_to_db(app)
     app.run(host="0.0.0.0", debug=True)

@@ -1,21 +1,157 @@
 <!-- Home page for Silverstone Contracting -->
-{% extends 'base.html' %}
+{% extends 'base.html' %} 
 
+{% block title %} Silverstone Contracting {% endblock %} 
+
+{% block head %}
+<link rel="stylesheet" href="/static/css/landing.css" />
+{% endblock %} 
+
+{% block header %}
+<!-- <div class="container-fluid px-0" id="landing-header">
+  <div class="row blue-green-background d-flex justify-content-center">
+    <h1 class="">Silverstone Contracting</h1>
+  </div>
+</div> -->
+{% endblock %} 
 
 {% block body %}
 
-<div class=" row full-width blue_green_background">
-    <div class="container"><br>
-        <h1>Silverstone</h1>
-            <h2>Contracting</h2><br>
+<div class="container-fluid px-0">
+  <div class="row px-5 g-3" id="landing-mission-statement">
+    <div class="col-12 d-flex justify-content-center">
+      <h2 class="gray-transparency large-container-default">
+        Crafting your vision with a
+        silver touch.
+      </h2>
     </div>
+
+    <!-- projects image carousel -->
+    <div class="col-12 c-wrapper">
+      <div
+        id="carouselExampleCaptions"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="/static/img/silverstone-stairs.jpeg" class="d-block w-100" alt="..." />
+
+          </div>
+          <div class="carousel-item">
+            <img src="/static/img/silverstone-roof.jpeg" class="d-block w-100" alt="..." />
+
+          </div>
+          <div class="carousel-item">
+            <img src="/static/img/silverstone-garage.jpeg" class="d-block w-100" alt="..." />
+
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- end carousel -->
+
+    <div class="col-12 d-flex justify-content-center">
+      <p class="gray-transparency large-container-default">
+        Silverstone means craftsmanship, exceptional customer service, and
+        attention to detail. From small repairs to major projects, we take pride
+        in our work and strive to exceed our clients' expectations every step of
+        the way. At Silverstone Contracting, we understand that your home is
+        your most valuable asset, and we are committed to helping you make the
+        most of it. Contact us today to schedule a consultation and let us bring
+        your vision to life.
+      </p>
+    </div>
+  </div>
 </div>
 
-<div class="container">
-    <h3>Welcome to Silverstone Contracting, where we craft your vision with a silver touch!</h3>
-        <p>Silverstone means craftsmanship, exceptional customer service, and attention to detail. From small repairs to major projects, we take pride in our work and strive to exceed our clients' expectations every step of the way. At Silverstone Contracting, we understand that your home is your most valuable asset, and we are committed to helping you make the most of it. Contact us today to schedule a consultation and let us bring your vision to life.</p>
-</div>
+<div class="container" id="landing-content">
+  <div
+    class="row d-flex flex-wrap justify-content-around align-items-center large-container-default green-transparency"
+  >
+    <div
+      class="col-md-5 col-12 order-1 d-flex justify-content-center align-items-center"
+    >
+      <img
+        class="img-fluid rounded"
+        src="static/img/look-up-look-down-photography--o7ASOHDV9E-unsplash-300x225.jpg"
+      />
+    </div>
+    <div class="col-md-7 col-12 order-2">
+      <div class="text-bubble med-row">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
+          blanditiis, repellat sapiente possimus, sed beatae qui distinctio odit
+          eaque fugiat eum laboriosam. Incidunt, placeat reprehenderit!
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div
+    class="row d-flex flex-wrap justify-content-around align-items-center large-container-default green-transparency"
+  >
+    <div
+      class="col-md-7 order-md-1 col-12 order-2 d-flex justify-content-center"
+    >
+      <div class="text-bubble med-row">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam
+          inventore obcaecati ad iusto quae itaque nulla harum corrupti, autem
+          illo eos eligendi qui ducimus delectus.
+        </p>
+      </div>
+    </div>
+
+    <div
+      class="col-md-5 order-md-2 col-12 order-1 d-flex justify-content-center align-items-center"
+    >
+      <img
+        class="img-fluid rounded"
+        src="static/img/look-up-look-down-photography--o7ASOHDV9E-unsplash-300x225.jpg"
+      />
+    </div>
+  </div>
 </div>
 {% endblock %}
-
-
