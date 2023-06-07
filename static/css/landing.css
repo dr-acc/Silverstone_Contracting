@@ -53,28 +53,3 @@ div.c-wrapper{
   width: 100%;
   box-sizing: border-box;
 } */
-
-/* ------------ content CSS ------------ */
-
-#landing-content > .row {
-  margin: 50px 0px;
-  padding: 40px;
-}
-
-.text-bubble {
-  border-radius: 5px;
-  padding: 1.5em;
-  color: #d5d2cb;
-  box-shadow: 0 0 0 5px slategrey, 0 0 0 10px gray, 0 0 0 15px gainsboro;
-}
-
-@media (max-width: 768px) {
-  #landing-content {
-    align-items: center;
-  }
-
-  .text-bubble {
-    text-align: center;
-    margin-top: 2em;
-  }
-}
