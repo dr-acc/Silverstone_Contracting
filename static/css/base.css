@@ -46,8 +46,8 @@
 
   .shimmer {
     transition: 0.3s
-   }
-   
+  }
+
   .shimmer:hover {
       text-align: center;
       transition: 0.3s;
@@ -107,11 +107,11 @@
     }
 
 
- /*------------ base.html call-to-action CSS ------------*/
+/*------------ base.html call-to-action CSS ------------*/
 
- #call-to-action {
+#call-to-action {
   padding: .5em;
- }
+}
 
   @media (max-width: 768px) {
     #call-to-action {
