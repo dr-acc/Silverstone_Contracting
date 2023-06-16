@@ -35,7 +35,7 @@
   max-width: 45em;
   padding: 1em;
   text-align: center;
-  font-size: 25px;
+  font-size: 24px;
 }
 
 div.c-wrapper{
@@ -48,6 +48,10 @@ div.c-wrapper{
     width: 80%; 
     margin: auto;
   }
+}
+
+.landing-text-hole p {
+  font-size: 36px;
 }
 
 #landing-content > .row {

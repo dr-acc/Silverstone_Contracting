@@ -9,6 +9,7 @@
 
 .nav-link {
   border-radius: 7px;
+  font-size: 36px;
 }
 
 .nav-link:hover {
@@ -129,6 +130,7 @@ footer {
   padding-left: 0px;
   padding-right: 0px;
   color: #d5d2cb;
+  font-size: 36px;
 }
 
 #footer-contact-info {
