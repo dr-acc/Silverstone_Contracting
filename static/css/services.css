@@ -8,10 +8,10 @@
   }
   
   .text-bubble {
-    border-radius: 5px;
+    border-radius: 10px;
     padding: 1.5em;
     color: #d5d2cb;
-    box-shadow: 0 0 0 5px slategrey, 0 0 0 10px gray, 0 0 0 15px gainsboro;
+    /* box-shadow: 0 0 0 5px slategrey, 0 0 0 10px gray, 0 0 0 15px gainsboro; */
   }
   
   @media (max-width: 768px) {

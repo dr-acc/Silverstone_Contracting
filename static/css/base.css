@@ -33,6 +33,11 @@
   font-size: 40px;
 }
 
+#navbar-logo {
+  height: 100px;
+  width: auto;
+}
+
 @media (max-width: 768px) {
   .logo {
     font-size: 25px;
@@ -44,68 +49,6 @@
     font-size: 18px;
   }
 }
-
-  .shimmer {
-    transition: 0.3s
-  }
-
-  .shimmer:hover {
-      text-align: center;
-      transition: 0.3s;
-      color: rgba(255,255,255,0.1);
-      background: -webkit-gradient(linear, left top, right top, from(#274029e9), to(#274029e9), color-stop(0.5, #fff));
-      background: -moz-gradient(linear, left top, right top, from(#274029e9), to(#274029e9), color-stop(0.5, #fff));
-      background: gradient(linear, left top, right top, from(#274029e9), to(#274029e9), color-stop(0.5, #fff));
-      -webkit-background-size: 125px 100%;
-      -moz-background-size: 125px 100%;
-      background-size: 125px 100%;
-      -webkit-background-clip: text;
-      -moz-background-clip: text;
-      background-clip: text;
-      -webkit-animation-name: shimmer;
-      -moz-animation-name: shimmer;
-      animation-name: shimmer;
-      -webkit-animation-duration: 2s;
-      -moz-animation-duration: 2s;
-      animation-duration: 2s;
-      -webkit-animation-iteration-count: 1;
-      -moz-animation-iteration-count: 1;
-      animation-iteration-count: 1;
-      background-repeat: no-repeat;
-      background-position: 0 0;
-    }
-    @-moz-keyframes shimmer {
-      0% {
-        background-position: bottom left;
-      }
-      100% {
-        background-position: top right;
-      }
-    }
-    @-webkit-keyframes shimmer {
-      0% {
-        background-position: bottom left;
-      }
-      100% {
-        background-position: top right;
-      }
-    }
-    @-o-keyframes shimmer {
-      0% {
-        background-position: bottom left;
-      }
-      100% {
-        background-position: top right;
-      }
-    }
-    @keyframes shimmer {
-      0% {
-        background-position: bottom left;
-      }
-      100% {
-        background-position: top right;
-      }
-    }
 
 
  /*------------ base.html call-to-action CSS ------------*/
@@ -228,3 +171,70 @@ footer {
     text-align: center;
   }
 }
+
+
+
+
+
+
+  /* .shimmer {
+    transition: 0.3s
+  }
+
+  .shimmer:hover {
+      text-align: center;
+      transition: 0.3s;
+      color: rgba(255,255,255,0.1);
+      background: -webkit-gradient(linear, left top, right top, from(#274029e9), to(#274029e9), color-stop(0.5, #fff));
+      background: -moz-gradient(linear, left top, right top, from(#274029e9), to(#274029e9), color-stop(0.5, #fff));
+      background: gradient(linear, left top, right top, from(#274029e9), to(#274029e9), color-stop(0.5, #fff));
+      -webkit-background-size: 125px 100%;
+      -moz-background-size: 125px 100%;
+      background-size: 125px 100%;
+      -webkit-background-clip: text;
+      -moz-background-clip: text;
+      background-clip: text;
+      -webkit-animation-name: shimmer;
+      -moz-animation-name: shimmer;
+      animation-name: shimmer;
+      -webkit-animation-duration: 2s;
+      -moz-animation-duration: 2s;
+      animation-duration: 2s;
+      -webkit-animation-iteration-count: 1;
+      -moz-animation-iteration-count: 1;
+      animation-iteration-count: 1;
+      background-repeat: no-repeat;
+      background-position: 0 0;
+    }
+    @-moz-keyframes shimmer {
+      0% {
+        background-position: bottom left;
+      }
+      100% {
+        background-position: top right;
+      }
+    }
+    @-webkit-keyframes shimmer {
+      0% {
+        background-position: bottom left;
+      }
+      100% {
+        background-position: top right;
+      }
+    }
+    @-o-keyframes shimmer {
+      0% {
+        background-position: bottom left;
+      }
+      100% {
+        background-position: top right;
+      }
+    }
+    @keyframes shimmer {
+      0% {
+        background-position: bottom left;
+      }
+      100% {
+        background-position: top right;
+      }
+    }

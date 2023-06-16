@@ -16,24 +16,41 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-}
+  font-family: 'Josefin Sans', sans-serif;
+  }
 
 h1 {
-  font-size: 70px;
+  font-size: 90px;
+  font-family: 'Yeseva One', cursive;
 }
 
 h2 {
-  font-size: 80px;
-  font-family: Brush Script MT;
+  font-size: 90px;
+  font-family: 'Yeseva One', cursive;
+  text-shadow: 5px -1px #274029;
+}
+
+h3 {
+  font-family: 'Yeseva One', cursive;
+  font-size: 45px;
+}
+
+p {
+  font-size: 24px;
+}
+
+.cursive {
+  font-size: 120px;
+  font-family: "Brush Script MT", sans;
   text-shadow: 5px -1px #274029;
 }
 
 @media (max-width: 768px) {
   h1 {
-    font-size: 40px;
+    font-size: 60px;
   }
   h2 {
-    font-size: 30px;
+    font-size: 50px;
   }
 }
 
@@ -45,7 +62,7 @@ h2 {
 }
 
 .dark-row {
-  background-color: #274029e9;
+  background-color:#7DA39D;
 }
 
 .green-transparency {
@@ -65,7 +82,6 @@ h2 {
 }
 
 .gray-transparency {
-  /* background-color: #ccc8c0e0; */
   background-color: rgba(245, 245, 245, 0.75);
 }
 
@@ -80,5 +96,6 @@ h2 {
 .large-container-default {
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
   border-radius: 10px;
+  border: none;
 }
 

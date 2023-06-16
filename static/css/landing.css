@@ -20,8 +20,12 @@
   /* display: flex; */
 }
 
+/* .twenty-wide {
+  width: 20em;
+} */
+
 #landing-mission-statement h2 {
-  margin: 1em;
+  /* margin: 1em; */
   max-width: 25em;
   padding: 1em;
   text-align: center;
