@@ -1,230 +1,250 @@
 /* ------------ base template navbar and footer styling ------------ */
 
-
-
 /*------------ base.html navbar CSS ------------*/
 
 .navbar-brand {
-    padding: 0.3em;
-  }
+  padding: 0.3em;
+  border-radius: 7px;
+}
+
+.nav-link {
+  border-radius: 7px;
+}
+
+.nav-link:hover {
+  background-color: #7b8ac2;
+  color: #d5d2cb;
+  border-radius: 7px;
+}
 
 #navbarNav {
-    justify-content: right;
-    text-align: right;
-  }
-  
-  @media (max-width: 768px) {
-    #navbarNav {
-      justify-content: center;
-      text-align: center;
-    }
-  }
-  
-  .navbar-brand:hover {
-    background-color: #7b8ac2;
-    color: #d5d2cb;
-    border-radius: 7px;
-  }
-  
-  .nav-link:hover {
-    background-color: #7b8ac2;
-    color: #d5d2cb;
-    border-radius: 7px;
-  }
+  justify-content: right;
+  text-align: right;
+}
 
+@media (max-width: 768px) {
+  #navbarNav {
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+.logo {
+  font-size: 40px;
+}
+
+@media (max-width: 768px) {
   .logo {
-    font-size: 40px;
+    font-size: 25px;
   }
+}
 
-  @media (max-width: 768px) {
-    .logo {font-size: 25px;}
+@media (max-width: 400px) {
+  .logo {
+    font-size: 18px;
   }
+}
 
-  @media (max-width: 400px) {
-    .logo {font-size: 18px;}
+.shimmer {
+  transition: 0.3s;
+}
+
+.shimmer:hover {
+  text-align: center;
+  transition: 0.3s;
+  color: rgba(255, 255, 255, 0.1);
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#274029e9),
+    to(#274029e9),
+    color-stop(0.5, #fff)
+  );
+  background: -moz-gradient(
+    linear,
+    left top,
+    right top,
+    from(#274029e9),
+    to(#274029e9),
+    color-stop(0.5, #fff)
+  );
+  background: gradient(
+    linear,
+    left top,
+    right top,
+    from(#274029e9),
+    to(#274029e9),
+    color-stop(0.5, #fff)
+  );
+  -webkit-background-size: 125px 100%;
+  -moz-background-size: 125px 100%;
+  background-size: 125px 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-animation-name: shimmer;
+  -moz-animation-name: shimmer;
+  animation-name: shimmer;
+  -webkit-animation-duration: 2s;
+  -moz-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-iteration-count: 1;
+  -moz-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+@-moz-keyframes shimmer {
+  0% {
+    background-position: bottom left;
   }
-
-  .shimmer {
-    transition: 0.3s
-   }
-   
-  .shimmer:hover {
-      text-align: center;
-      transition: 0.3s;
-      color: rgba(255,255,255,0.1);
-      background: -webkit-gradient(linear, left top, right top, from(#274029e9), to(#274029e9), color-stop(0.5, #fff));
-      background: -moz-gradient(linear, left top, right top, from(#274029e9), to(#274029e9), color-stop(0.5, #fff));
-      background: gradient(linear, left top, right top, from(#274029e9), to(#274029e9), color-stop(0.5, #fff));
-      -webkit-background-size: 125px 100%;
-      -moz-background-size: 125px 100%;
-      background-size: 125px 100%;
-      -webkit-background-clip: text;
-      -moz-background-clip: text;
-      background-clip: text;
-      -webkit-animation-name: shimmer;
-      -moz-animation-name: shimmer;
-      animation-name: shimmer;
-      -webkit-animation-duration: 2s;
-      -moz-animation-duration: 2s;
-      animation-duration: 2s;
-      -webkit-animation-iteration-count: 1;
-      -moz-animation-iteration-count: 1;
-      animation-iteration-count: 1;
-      background-repeat: no-repeat;
-      background-position: 0 0;
-    }
-    @-moz-keyframes shimmer {
-      0% {
-        background-position: bottom left;
-      }
-      100% {
-        background-position: top right;
-      }
-    }
-    @-webkit-keyframes shimmer {
-      0% {
-        background-position: bottom left;
-      }
-      100% {
-        background-position: top right;
-      }
-    }
-    @-o-keyframes shimmer {
-      0% {
-        background-position: bottom left;
-      }
-      100% {
-        background-position: top right;
-      }
-    }
-    @keyframes shimmer {
-      0% {
-        background-position: bottom left;
-      }
-      100% {
-        background-position: top right;
-      }
-    }
-
-
- /*------------ base.html call-to-action CSS ------------*/
-
- #call-to-action {
-  padding: .5em;
- }
-
-  @media (max-width: 768px) {
-    #call-to-action {
-      padding: .5em;
-    }
+  100% {
+    background-position: top right;
   }
+}
+@-webkit-keyframes shimmer {
+  0% {
+    background-position: bottom left;
+  }
+  100% {
+    background-position: top right;
+  }
+}
+@-o-keyframes shimmer {
+  0% {
+    background-position: bottom left;
+  }
+  100% {
+    background-position: top right;
+  }
+}
+@keyframes shimmer {
+  0% {
+    background-position: bottom left;
+  }
+  100% {
+    background-position: top right;
+  }
+}
 
+/*------------ base.html call-to-action CSS ------------*/
+
+#call-to-action {
+  padding: 0.5em;
+}
+
+@media (max-width: 768px) {
+  #call-to-action {
+    padding: 0.5em;
+  }
+}
+
+.cta-btn {
+  color: #d5d2cb;
+  background-color: lightcoral;
+  font-size: 38px;
+  padding: 0.25em;
+  text-decoration: none;
+}
+
+.cta-btn:hover {
+  background-color: #7b8ac2;
+}
+
+.cta-btn:active {
+  box-shadow: 1px 1px 5px black;
+  transform: translateY(3px);
+}
+
+#call-to-action p {
+  font-size: 35px;
+  align-self: center;
+  margin: 0.5em;
+  text-align: center;
+}
+
+@media (max-width: 1750px) {
   .cta-btn {
-    color: #d5d2cb;
-    background-color: lightcoral;
-    font-size: 38px;
-    padding: .25em;
-    text-decoration: none;
-  }
-
-  .cta-btn:hover {
-    background-color: #7b8ac2;
-  }
-
-  .cta-btn:active {
-    box-shadow: 1px 1px 5px black;
-    transform: translateY(3px);
+    font-size: 30px;
+    padding: 0.5em;
   }
 
   #call-to-action p {
-    font-size: 35px;
-    align-self: center;
-    margin: .5em;
-    text-align: center;
+    font-size: 32px;
   }
-  
-  @media (max-width: 1750px) {
-    .cta-btn {
-      font-size: 30px;
-      padding: .5em;
-    }
+}
 
-    #call-to-action p {
-      font-size: 32px;
-    }
+@media (max-width: 1080px) {
+  .cta-btn {
+    font-size: 25px;
+    padding: 0.25em;
   }
 
-  @media (max-width: 1080px) {
-    .cta-btn {
-      font-size: 25px;
-      padding: .25em;
-    }
+  #call-to-action p {
+    font-size: 20px;
+  }
+}
 
-    #call-to-action p {
-      font-size: 20px;
-    }
+@media (max-width: 768px) {
+  .cta-btn {
+    font-size: 20px;
+    padding: 0.5em;
   }
 
-  @media (max-width: 768px) {
-    .cta-btn {
-      font-size: 20px;
-      padding: .5em;
-    }
+  #call-to-action p {
+    font-size: 0px;
+  }
+}
 
-    #call-to-action p {
-      font-size: 0px;
-    }
-  }
+/*------------ base.html footer CSS ------------*/
 
-  /*------------ base.html footer CSS ------------*/
-  
-  footer {
-    width: 100vw;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 0px;
-    padding-right: 0px;
-    color: #d5d2cb;
-  }
-  
-  #footer-contact-info {
-    justify-content: left;
-    text-align: left;
-    padding-left: 0px;
-  }
-  
-  #footer-logo {
+footer {
+  width: 100vw;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 0px;
+  padding-right: 0px;
+  color: #d5d2cb;
+}
+
+#footer-contact-info {
+  justify-content: left;
+  text-align: left;
+  padding-left: 0px;
+}
+
+#footer-logo {
+  justify-content: center;
+  text-align: center;
+  align-items: end;
+}
+
+#footer-logo-wrapper > * {
+  padding-top: 15px;
+}
+
+#footer-nav {
+  justify-content: right;
+  text-align: right;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#footer-nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 768px) {
+  #footer-nav {
     justify-content: center;
     text-align: center;
-    align-items: end;
   }
-  
-  #footer-logo-wrapper > * {
-    padding-top: 15px;
+
+  #footer-contact-info {
+    justify-content: center;
+    text-align: center;
   }
-  
-  #footer-nav {
-    justify-content: right;
-    text-align: right;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  #footer-nav ul {
-    margin: 0;
-    padding: 0;
-  }
-  
-  @media (max-width: 768px) {
-    #footer-nav {
-      justify-content: center;
-      text-align: center;
-    }
-  
-    #footer-contact-info {
-      justify-content: center;
-      text-align: center;
-    }
-  }
-  
+}
