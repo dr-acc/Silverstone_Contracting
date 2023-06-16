@@ -1,11 +1,15 @@
 /*------------ landing.html CSS ------------*/
+@keyframes shine {
+  0%  {
+    background-position: 110% 0%, 0 0;
+  }
+  100% {
+    background-position: -10% 0%, 0 0;
+  }
+}
+/* The above is from a code pen for metallic text. */
 
 /* ------------ header CSS ------------ */
-
-/* #landing-header div {
-  flex-wrap: wrap;
-  justify-content: center;
-} */
 
 .landing-header div h1 {
   width: 11em;
@@ -42,14 +46,61 @@ div.c-wrapper{
   }
 }
 
-/* .blue-green-background {
-  background: radial-gradient(circle, #32746d, #9ec5ab);
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin: 0;
-  text-align: center;
-  text-shadow: 2px 2px #01200f;
-  letter-spacing: 2px;
-  width: 100%;
-  box-sizing: border-box;
-} */
+#landing-content > .row {
+  margin: 50px 0px;
+  padding: 40px;
+}
+
+.text-bubble {
+  border-radius: 5px;
+  padding: 1.5em;
+  color: #d5d2cb;
+  box-shadow: 0 0 0 5px slategrey, 0 0 0 10px gray, 0 0 0 15px gainsboro;
+}
+
+@media (max-width: 768px) {
+  #landing-content {
+    align-items: center;
+  }
+
+  .text-bubble {
+    text-align: center;
+    margin-top: 2em;
+  }
+}
+
+[data-silver] {
+	color: #858585;
+
+	@supports ((background-clip: text) or (-webkit-background-clip: text)) {
+		color: transparent;
+		background-image: linear-gradient(to right, transparent 0%, transparent 45%,white 50%,transparent 55%,transparent 100%), linear-gradient(270deg, #cfc7c7 1.3%, #c4c1c1 15%, #a4a4a4 29.6%, #9d9b9b 29.6%, #aeacac 31.8%, #b9b7b7 31.8%, #d3d3d3);
+		background-position: 110% 0%, 0 0;
+		background-size: 200% auto, auto;
+		-webkit-background-clip: text;
+		background-clip: text;
+		animation: shine 2s ease-in-out 2 forwards 2s;
+    animation-iteration-count: 1.9;
+  }
+	
+	&:before {
+		content: attr(data-silver);
+		color: #fff;
+		position: absolute;
+		z-index: -1;
+		top: -.08vw;
+		left: 0px;
+		text-shadow: rgba(whitesmoke, 1) 0px .08vw 12px;
+	}
+  @supports ((background-clip: text) or (-webkit-background-clip: text)) {
+    &:after {
+        content: attr(data-silver);
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-image: linear-gradient(to bottom, transparent 0%,transparent 48%,rgba(#111, .5) 50%,transparent 75%);
+        -webkit-background-clip: text;
+        background-clip: text;
+    }
+  }
+}

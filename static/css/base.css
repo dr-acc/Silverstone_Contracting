@@ -45,93 +45,73 @@
   }
 }
 
-.shimmer {
-  transition: 0.3s;
-}
+  .shimmer {
+    transition: 0.3s
+  }
 
-.shimmer:hover {
-  text-align: center;
-  transition: 0.3s;
-  color: rgba(255, 255, 255, 0.1);
-  background: -webkit-gradient(
-    linear,
-    left top,
-    right top,
-    from(#274029e9),
-    to(#274029e9),
-    color-stop(0.5, #fff)
-  );
-  background: -moz-gradient(
-    linear,
-    left top,
-    right top,
-    from(#274029e9),
-    to(#274029e9),
-    color-stop(0.5, #fff)
-  );
-  background: gradient(
-    linear,
-    left top,
-    right top,
-    from(#274029e9),
-    to(#274029e9),
-    color-stop(0.5, #fff)
-  );
-  -webkit-background-size: 125px 100%;
-  -moz-background-size: 125px 100%;
-  background-size: 125px 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  background-clip: text;
-  -webkit-animation-name: shimmer;
-  -moz-animation-name: shimmer;
-  animation-name: shimmer;
-  -webkit-animation-duration: 2s;
-  -moz-animation-duration: 2s;
-  animation-duration: 2s;
-  -webkit-animation-iteration-count: 1;
-  -moz-animation-iteration-count: 1;
-  animation-iteration-count: 1;
-  background-repeat: no-repeat;
-  background-position: 0 0;
-}
-@-moz-keyframes shimmer {
-  0% {
-    background-position: bottom left;
-  }
-  100% {
-    background-position: top right;
-  }
-}
-@-webkit-keyframes shimmer {
-  0% {
-    background-position: bottom left;
-  }
-  100% {
-    background-position: top right;
-  }
-}
-@-o-keyframes shimmer {
-  0% {
-    background-position: bottom left;
-  }
-  100% {
-    background-position: top right;
-  }
-}
-@keyframes shimmer {
-  0% {
-    background-position: bottom left;
-  }
-  100% {
-    background-position: top right;
-  }
-}
+  .shimmer:hover {
+      text-align: center;
+      transition: 0.3s;
+      color: rgba(255,255,255,0.1);
+      background: -webkit-gradient(linear, left top, right top, from(#274029e9), to(#274029e9), color-stop(0.5, #fff));
+      background: -moz-gradient(linear, left top, right top, from(#274029e9), to(#274029e9), color-stop(0.5, #fff));
+      background: gradient(linear, left top, right top, from(#274029e9), to(#274029e9), color-stop(0.5, #fff));
+      -webkit-background-size: 125px 100%;
+      -moz-background-size: 125px 100%;
+      background-size: 125px 100%;
+      -webkit-background-clip: text;
+      -moz-background-clip: text;
+      background-clip: text;
+      -webkit-animation-name: shimmer;
+      -moz-animation-name: shimmer;
+      animation-name: shimmer;
+      -webkit-animation-duration: 2s;
+      -moz-animation-duration: 2s;
+      animation-duration: 2s;
+      -webkit-animation-iteration-count: 1;
+      -moz-animation-iteration-count: 1;
+      animation-iteration-count: 1;
+      background-repeat: no-repeat;
+      background-position: 0 0;
+    }
+    @-moz-keyframes shimmer {
+      0% {
+        background-position: bottom left;
+      }
+      100% {
+        background-position: top right;
+      }
+    }
+    @-webkit-keyframes shimmer {
+      0% {
+        background-position: bottom left;
+      }
+      100% {
+        background-position: top right;
+      }
+    }
+    @-o-keyframes shimmer {
+      0% {
+        background-position: bottom left;
+      }
+      100% {
+        background-position: top right;
+      }
+    }
+    @keyframes shimmer {
+      0% {
+        background-position: bottom left;
+      }
+      100% {
+        background-position: top right;
+      }
+    }
 
-/*------------ base.html call-to-action CSS ------------*/
+
+ /*------------ base.html call-to-action CSS ------------*/
 
 #call-to-action {
-  padding: 0.5em;
+  padding: .5em;
 }
 
 @media (max-width: 768px) {
@@ -140,13 +120,13 @@
   }
 }
 
-.cta-btn {
-  color: #d5d2cb;
-  background-color: lightcoral;
-  font-size: 38px;
-  padding: 0.25em;
-  text-decoration: none;
-}
+  .cta-btn {
+    color: #d5d2cb;
+    background-color: lightcoral;
+    font-size: 36px;
+    padding: .25em;
+    text-decoration: none;
+  }
 
 .cta-btn:hover {
   background-color: #7b8ac2;
