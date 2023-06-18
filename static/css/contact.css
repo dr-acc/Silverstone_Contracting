@@ -31,5 +31,6 @@
 }
 
 #contact-text-body {
-    padding: 1em;
+    padding: .5em .5em 1em 1em;
+    font-size: 24px;
 }
