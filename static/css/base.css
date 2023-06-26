@@ -1,5 +1,12 @@
 /* ------------ base template navbar and footer styling ------------ */
 
+/* Message flashing */
+.flash {
+  background-color: #FBB0B0;
+  padding: 10px;
+  width: 400px;
+}
+
 /*------------ base.html navbar CSS ------------*/
 
 .navbar-brand {

@@ -1,15 +1,25 @@
 """
 A server file for SILVERSTONE CONTRACTING & Landscaping 
 """
-from model import db
 from flask import Flask, render_template, redirect, request, flash, session
 import jinja2
+from flask_mail import Mail, Message
+from forms import ContactForm
+# from model import db
 # from model import Routine, User, Exercise, PracticeSession, db
 # from crud import last_two_sessions, get_user_by_id
 # from datetime import datetime
 
 app = Flask(__name__)
 app.secret_key = 's0m3TH!ng'
+
+mail = Mail()
+app.config["MAIL_SERVER"] = "smtp.gmail.com"
+app.config["MAIL_PORT"] = 465
+app.config["MAIL_USE_SSL"] = True
+app.config["MAIL_USERNAME"] = "justferfunan@gmail.com"
+app.config["MAIL_PASSWORD"] = "ztwfbdblwefbfdck"
+mail.init_app(app)
 
 # Normally, if you refer to an undefined variable in a Jinja template,
 # Jinja silently ignores this. This makes debugging difficult, so we'll
@@ -46,11 +56,21 @@ def projects():
 
     return render_template("projects.html")
 
-@app.route("/contact")
+@app.route("/contacts", methods=["GET", "POST"])
 def contact():
     """Return contact page."""
-
-    return render_template("contact.html")
+    form = ContactForm()
+    if request.method == 'POST':
+        if not form.validate():
+            flash('All fields are required.')
+            return render_template('contacts.html', form=form, success=False)
+        else:
+            msg = Message("Silverstone Web Form Request", sender='justferfunan@gmail.com', recipients=['justferfunan@gmail.com'])
+            msg.body = f"From: {form.name.data} <{form.email.data}>\n{form.message.data}"
+            mail.send(msg)
+            return render_template("contacts.html", form=form, success=True)
+    elif request.method == 'GET':
+        return render_template("contacts.html", form=form, success=False)
 
 
 
