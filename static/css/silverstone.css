@@ -2,13 +2,15 @@
 
 /* ------------ document / utility CSS ------------ */
 
+* {
+  box-sizing: border-box;
+}
+
 html {
-  /* font-family: "Figtree", sans-serif;
-  font-family: "Poppins", sans-serif; */
-  font-family: 'Lora', serif;
   color: #274029;
   font-size: large;
   overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 body {
