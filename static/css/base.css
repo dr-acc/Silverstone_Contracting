@@ -145,7 +145,7 @@
   color: #d5d2cb;
   background-color: lightcoral;
   font-size: 36px;
-  padding: 0.25em;
+  padding: 0.35em 0.5em 0.25em;
   text-decoration: none;
 }
 
@@ -168,7 +168,6 @@
 @media (max-width: 1750px) {
   .cta-btn {
     font-size: 30px;
-    padding: 0.5em;
   }
 
   #call-to-action p {
@@ -179,7 +178,6 @@
 @media (max-width: 1080px) {
   .cta-btn {
     font-size: 25px;
-    padding: 0.25em;
   }
 
   #call-to-action p {
@@ -190,7 +188,6 @@
 @media (max-width: 768px) {
   .cta-btn {
     font-size: 20px;
-    padding: 0.5em;
   }
 
   #call-to-action p {
