@@ -24,10 +24,14 @@
   border-radius: 7px;
 }
 
+.nav-link {
+  border-radius: 7px;
+  transition: all 150ms;
+}
+
 .nav-link:hover {
   background-color: #7b8ac2;
   color: #d5d2cb;
-  border-radius: 7px;
 }
 
 .logo {
