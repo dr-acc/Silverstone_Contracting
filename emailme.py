@@ -13,7 +13,7 @@ PASSWORD = os.environ.get('SMTPPASSWORD')
 message = """\
 Subject: Hi there
 
-This message is sent from Python."""
+This message is sent directly from emailme.py (or you forgot to add the message parameter when you called send_an_email, oops!)."""
 
 ssl_context = ssl.create_default_context()
 
