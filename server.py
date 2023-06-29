@@ -1,10 +1,12 @@
 """
 A server file for SILVERSTONE CONTRACTING & Landscaping 
 """
+from datetime import datetime
 from flask import Flask, render_template, redirect, request, flash, session
 import jinja2
-from flask_mail import Mail, Message
-from forms import ContactForm
+# from flask_mail import Mail, Message
+# from forms import ContactForm
+from emailme import send_an_email
 # from model import db
 # from model import Routine, User, Exercise, PracticeSession, db
 # from crud import last_two_sessions, get_user_by_id
@@ -13,13 +15,13 @@ from forms import ContactForm
 app = Flask(__name__)
 app.secret_key = 's0m3TH!ng'
 
-mail = Mail()
-app.config["MAIL_SERVER"] = "smtp.gmail.com"
-app.config["MAIL_PORT"] = 465
-app.config["MAIL_USE_SSL"] = True
-app.config["MAIL_USERNAME"] = "justferfunan@gmail.com"
-app.config["MAIL_PASSWORD"] = "ztwfbdblwefbfdck"
-mail.init_app(app)
+# mail = Mail()
+# app.config["MAIL_SERVER"] = "smtp.gmail.com"
+# app.config["MAIL_PORT"] = 465
+# app.config["MAIL_USE_SSL"] = True
+# app.config["MAIL_USERNAME"] = "justferfunan@gmail.com"
+# app.config["MAIL_PASSWORD"] = "ztwfbdblwefbfdck"
+# mail.init_app(app)
 
 # Normally, if you refer to an undefined variable in a Jinja template,
 # Jinja silently ignores this. This makes debugging difficult, so we'll
@@ -56,8 +58,35 @@ def projects():
 
     return render_template("projects.html")
 
-@app.route("/contacts", methods=["GET", "POST"])
+@app.route("/contact", methods=["GET", "POST"])
 def contact():
+    """Return contact page."""
+
+    if request.method == 'POST':
+        time = datetime.now()
+        name = request.form["name"]
+        email = request.form["email"]
+        phone = request.form["phone"]
+        service = request.form["services"]
+        message_body = request.form["message-body"]
+
+        client_message = """\
+        Message Sent: {time}\n
+        Client Name: {name}\n
+        Client Email: {email}\n
+        Client Phone: {phone}\n
+        Services Requested: {service}\n
+        More Details: {message_body}""".format(time=time, name=name, email=email, phone=phone, service=service, message_body=message_body)
+
+        send_an_email(msg=client_message)
+        flash("email sent")
+        return render_template("contact.html")
+
+    elif request.method == 'GET':
+        return render_template("contact.html")
+
+@app.route("/contacts", methods=["GET", "POST"])
+def contacts():
     """Return contact page."""
     form = ContactForm()
     if request.method == 'POST':
