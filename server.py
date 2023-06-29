@@ -1,12 +1,12 @@
 """
 A server file for SILVERSTONE CONTRACTING & Landscaping 
 """
+import os
 from datetime import datetime
 from flask import Flask, render_template, redirect, request, flash, session
 import jinja2
-# from flask_mail import Mail, Message
-# from forms import ContactForm
 from emailme import send_an_email
+
 # from model import db
 # from model import Routine, User, Exercise, PracticeSession, db
 # from crud import last_two_sessions, get_user_by_id
@@ -14,14 +14,8 @@ from emailme import send_an_email
 
 app = Flask(__name__)
 app.secret_key = 's0m3TH!ng'
-
-# mail = Mail()
-# app.config["MAIL_SERVER"] = "smtp.gmail.com"
-# app.config["MAIL_PORT"] = 465
-# app.config["MAIL_USE_SSL"] = True
-# app.config["MAIL_USERNAME"] = "justferfunan@gmail.com"
-# app.config["MAIL_PASSWORD"] = "ztwfbdblwefbfdck"
-# mail.init_app(app)
+PASSWORD = os.environ['SMTPPASSWORD']
+# print(PASSWORD)
 
 # Normally, if you refer to an undefined variable in a Jinja template,
 # Jinja silently ignores this. This makes debugging difficult, so we'll
@@ -78,7 +72,7 @@ def contact():
         Services Requested: {service}\n
         More Details: {message_body}""".format(time=time, name=name, email=email, phone=phone, service=service, message_body=message_body)
 
-        send_an_email(msg=client_message)
+        send_an_email(password=PASSWORD, msg=client_message)
         flash("email sent")
         return render_template("contact.html")
 
