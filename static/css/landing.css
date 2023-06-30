@@ -41,6 +41,7 @@
 div.c-wrapper{
   width: 864px; 
   margin: auto;
+  padding: 0px;
 }
 
 @media (max-width: 1080px){

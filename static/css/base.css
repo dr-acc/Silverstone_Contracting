@@ -1,21 +1,16 @@
 /* ------------ base template navbar and footer styling ------------ */
 
+/* Message flashing */
+.flash {
+  background-color: #FBB0B0;
+  padding: 10px;
+  width: 400px;
+}
+
 /*------------ base.html navbar CSS ------------*/
 
 .navbar-brand {
   padding: 0.3em;
-  border-radius: 7px;
-}
-
-.nav-link {
-  border-radius: 7px;
-  font-size: 36px;
-}
-
-.nav-link:hover {
-  background-color: #7b8ac2;
-  color: #d5d2cb;
-  border-radius: 7px;
 }
 
 #navbarNav {
@@ -30,13 +25,24 @@
   }
 }
 
-.logo {
-  font-size: 40px;
+.navbar-brand:hover {
+  background-color: #7b8ac2;
+  color: #d5d2cb;
+  border-radius: 7px;
 }
 
-#navbar-logo {
-  height: 100px;
-  width: auto;
+.nav-link {
+  border-radius: 7px;
+  transition: all 150ms;
+}
+
+.nav-link:hover {
+  background-color: #7b8ac2;
+  color: #d5d2cb;
+}
+
+.logo {
+  font-size: 40px;
 }
 
 @media (max-width: 768px) {
@@ -51,11 +57,93 @@
   }
 }
 
+.shimmer {
+  transition: 0.3s;
+}
 
- /*------------ base.html call-to-action CSS ------------*/
+.shimmer:hover {
+  text-align: center;
+  transition: 0.3s;
+  color: rgba(255, 255, 255, 0.1);
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#274029e9),
+    to(#274029e9),
+    color-stop(0.5, #fff)
+  );
+  background: -moz-gradient(
+    linear,
+    left top,
+    right top,
+    from(#274029e9),
+    to(#274029e9),
+    color-stop(0.5, #fff)
+  );
+  background: gradient(
+    linear,
+    left top,
+    right top,
+    from(#274029e9),
+    to(#274029e9),
+    color-stop(0.5, #fff)
+  );
+  -webkit-background-size: 125px 100%;
+  -moz-background-size: 125px 100%;
+  background-size: 125px 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-animation-name: shimmer;
+  -moz-animation-name: shimmer;
+  animation-name: shimmer;
+  -webkit-animation-duration: 2s;
+  -moz-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-iteration-count: 1;
+  -moz-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+@-moz-keyframes shimmer {
+  0% {
+    background-position: bottom left;
+  }
+  100% {
+    background-position: top right;
+  }
+}
+@-webkit-keyframes shimmer {
+  0% {
+    background-position: bottom left;
+  }
+  100% {
+    background-position: top right;
+  }
+}
+@-o-keyframes shimmer {
+  0% {
+    background-position: bottom left;
+  }
+  100% {
+    background-position: top right;
+  }
+}
+@keyframes shimmer {
+  0% {
+    background-position: bottom left;
+  }
+  100% {
+    background-position: top right;
+  }
+}
+
+/*------------ base.html call-to-action CSS ------------*/
 
 #call-to-action {
-  padding: .5em;
+  padding: 0.5em;
 }
 
 @media (max-width: 768px) {
@@ -64,13 +152,14 @@
   }
 }
 
-  .cta-btn {
-    color: #d5d2cb;
-    background-color: lightcoral;
-    font-size: 36px;
-    padding: .25em;
-    text-decoration: none;
-  }
+.cta-btn {
+  color: #d5d2cb;
+  background-color: lightcoral;
+  font-size: 36px;
+  padding: 0.35em 0.5em 0.25em;
+  text-decoration: none;
+  transition: color 300ms;
+}
 
 .cta-btn:hover {
   background-color: #7b8ac2;
@@ -91,7 +180,6 @@
 @media (max-width: 1750px) {
   .cta-btn {
     font-size: 30px;
-    padding: 0.5em;
   }
 
   #call-to-action p {
@@ -102,7 +190,6 @@
 @media (max-width: 1080px) {
   .cta-btn {
     font-size: 25px;
-    padding: 0.25em;
   }
 
   #call-to-action p {
@@ -113,7 +200,6 @@
 @media (max-width: 768px) {
   .cta-btn {
     font-size: 20px;
-    padding: 0.5em;
   }
 
   #call-to-action p {
@@ -130,7 +216,6 @@ footer {
   padding-left: 0px;
   padding-right: 0px;
   color: #d5d2cb;
-  font-size: 24px;
 }
 
 #footer-contact-info {
@@ -163,6 +248,12 @@ footer {
 }
 
 @media (max-width: 768px) {
+  #footer-contact-info,
+  #footer-logo,
+  #footer-nav {
+    margin-top: 1em;
+  }
+
   #footer-nav {
     justify-content: center;
     text-align: center;
@@ -173,70 +264,3 @@ footer {
     text-align: center;
   }
 }
-
-
-
-
-
-
-  /* .shimmer {
-    transition: 0.3s
-  }
-
-  .shimmer:hover {
-      text-align: center;
-      transition: 0.3s;
-      color: rgba(255,255,255,0.1);
-      background: -webkit-gradient(linear, left top, right top, from(#274029e9), to(#274029e9), color-stop(0.5, #fff));
-      background: -moz-gradient(linear, left top, right top, from(#274029e9), to(#274029e9), color-stop(0.5, #fff));
-      background: gradient(linear, left top, right top, from(#274029e9), to(#274029e9), color-stop(0.5, #fff));
-      -webkit-background-size: 125px 100%;
-      -moz-background-size: 125px 100%;
-      background-size: 125px 100%;
-      -webkit-background-clip: text;
-      -moz-background-clip: text;
-      background-clip: text;
-      -webkit-animation-name: shimmer;
-      -moz-animation-name: shimmer;
-      animation-name: shimmer;
-      -webkit-animation-duration: 2s;
-      -moz-animation-duration: 2s;
-      animation-duration: 2s;
-      -webkit-animation-iteration-count: 1;
-      -moz-animation-iteration-count: 1;
-      animation-iteration-count: 1;
-      background-repeat: no-repeat;
-      background-position: 0 0;
-    }
-    @-moz-keyframes shimmer {
-      0% {
-        background-position: bottom left;
-      }
-      100% {
-        background-position: top right;
-      }
-    }
-    @-webkit-keyframes shimmer {
-      0% {
-        background-position: bottom left;
-      }
-      100% {
-        background-position: top right;
-      }
-    }
-    @-o-keyframes shimmer {
-      0% {
-        background-position: bottom left;
-      }
-      100% {
-        background-position: top right;
-      }
-    }
-    @keyframes shimmer {
-      0% {
-        background-position: bottom left;
-      }
-      100% {
-        background-position: top right;
-      }
-    }

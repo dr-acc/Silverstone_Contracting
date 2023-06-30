@@ -1,4 +1,1 @@
-env/
-*.pyc
-secrets.sh
-.gitignore
+export SMTPPASSWORD='ztwfbdblwefbfdck'

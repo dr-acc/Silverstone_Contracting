@@ -1,11 +1,13 @@
 {% extends 'base.html' %} {% block title %} Contact Us - Silverstone Contracting
 {% endblock %} {% block head %}
 <link rel="stylesheet" href="/static/css/contact.css" />
-{% endblock %} {% block body %}
+{% endblock %} 
+
+{% block body %}
 
 <div class="container green-transparency large-container-default" id="contact-box">
   <div
-    class="row d-flex flex-wrap justify-content-around orange-banner large-container-default"
+    class="d-flex flex-wrap justify-content-around orange-banner large-container-default"
     id="contact-banner"
   >
     <div class="col-12 col-md-6 order-md-1">
@@ -18,8 +20,8 @@
       </p>
     </div>
   </div>
-  <div class="row g-5">
-    <form class="col-12 col-md-6">
+  <div class="row g-5 pe-4">
+    <form class="col-12 col-md-6" action="{{ url_for('contact') }}" method=post>
       <div class="form-floating mb-4">
         <input
           class="form-control"
@@ -51,21 +53,23 @@
         <label for="contact-phone">Phone Number</label>
       </div>
       <select
-        class="form-select-lg mb-4 w-100"
+        class="form-control form-select-lg mb-4 w-100"
         aria-label="Services Select Menu"
+        name="services"
       >
-        <option selected>Services</option>
-        <option value="1">One</option>
-        <option value="2">Two</option>
-        <option value="3">Three</option>
+        <option selected>Select Services</option>
+        <option value="Interior">Interior</option>
+        <option value="Exterior">Exterior</option>
+        <option value="Both/Other">Both/Other</option>
       </select>
       <textarea
         class="form-control mb-4"
         id="contact-more-info"
         rows="5"
         placeholder="Tell us more about your project."
+        name="message-body"
       ></textarea>
-      <button type="button" class="cta-btn large-container-default" src="/contact-submit">
+      <button type="submit" class="cta-btn large-container-default" src="/contact-submit">
         Submit
       </button>
     </form>

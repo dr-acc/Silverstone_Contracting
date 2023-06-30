@@ -2,13 +2,15 @@
 
 /* ------------ document / utility CSS ------------ */
 
+* {
+  box-sizing: border-box;
+}
+
 html {
-  /* font-family: "Figtree", sans-serif;
-  font-family: "Poppins", sans-serif; */
-  font-family: 'Lora', serif;
   color: #274029;
   font-size: large;
   overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 body {
@@ -39,7 +41,16 @@ h3 {
   font-size: 120px;
   font-family: "Brush Script MT", sans;
   text-shadow: 5px -1px #274029;
+  display: block;
 }
+
+@media (max-width: 768px) {
+  .cursive {
+    /* text-transform: capitalize; */
+    font-size: 80px;
+  }
+}
+
 
 @media (max-width: 768px) {
   h1 {
