@@ -5,13 +5,13 @@
   background-color: #FBB0B0;
   padding: 0.5em;  
   margin: 0.5em;
-  width: fit-content;s
+  width: fit-content;
 }
 
 /*------------ base.html navbar CSS ------------*/
 
 .navbar-brand {
-  padding: 0.3em;
+  padding: .3em;
 }
 
 #navbarNav {
