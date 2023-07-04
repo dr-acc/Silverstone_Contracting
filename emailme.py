@@ -1,4 +1,4 @@
-## email ?
+## email
 
 import smtplib
 import ssl
