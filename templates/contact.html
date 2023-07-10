@@ -1,11 +1,12 @@
 {% extends 'base.html' %} {% block title %} Contact Us - Silverstone Contracting
 {% endblock %} {% block head %}
 <link rel="stylesheet" href="/static/css/contact.css" />
-{% endblock %} 
+{% endblock %} {% block body %}
 
-{% block body %}
-
-<div class="container green-transparency large-container-default" id="contact-box">
+<div
+  class="container green-transparency large-container-default"
+  id="contact-box"
+>
   <div
     class="d-flex flex-wrap justify-content-around orange-banner large-container-default"
     id="contact-banner"
@@ -21,10 +22,14 @@
     </div>
   </div>
 
-<!-- contact form -->
+  <!-- contact form -->
 
   <div class="row g-5 pe-4">
-    <form class="col-12 col-md-6" action="{{ url_for('contact') }}" method=post>
+    <form
+      class="col-12 col-md-6"
+      action="{{ url_for('contact') }}"
+      method="post"
+    >
       <div class="form-floating mb-4">
         <input
           class="form-control"
@@ -72,28 +77,48 @@
         placeholder="Tell us more about your project."
         name="message-body"
       ></textarea>
-      <button type="submit" class="cta-btn large-container-default" src="/contact-submit">
+      <button
+        type="submit"
+        class="cta-btn large-container-default"
+        src="/contact-submit"
+      >
         Submit
       </button>
     </form>
 
-<!-- end contact form -->
+    <!-- end contact form -->
 
     <div
       class="col-12 col-md-6 gray-transparency large-container-default h-100"
       id="contact-text"
     >
       <h3 id="contact-text-header">Hellllo</h3>
-      <p id="contact-text-body">
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit? <br><br> Incidunt, qui
-        quisquam, saepe doloribus inventore perferendis quibusdam illo sed et,
-        corrupti ipsam pariatur iure nobis praesentium? <br><br> Optio magni et nobis sit
-        corporis consequuntur distinctio, repellendus neque, reiciendis, soluta
-        voluptate laborum aliquid!
-
-        <!-- include a link to the projects page for reference  question mark? -->
-
+      <p class="contact-text-body">
+        Whether you're envisioning a grand-scale project, remodeling your home,
+        or enhancing your outdoor living spaces, Silverstone is here to turn
+        your dreams into reality.</p>
+        <p class="contact-text-body">
+        With Silverstone Contracting, you can trust
+        that your vision will be brought to life with the highest level of
+        craftsmanship.detailed information about your project. This will help us
+        better understand your needs and provide you with the most accurate and
+        comprehensive solution.</p>
+      <ul class="contact-text-body projects-list">
+        <li>Large construction projects</li>
+        <li>Home remodeling and renovations</li>
+        <li>Driveways and pathways</li>
+        <li>Patios and outdoor living spaces</li>
+        <li>Fences and gates</li>
+        <li>Decks and porches</li>
+        <li>Roofing and repairs</li>
+      </ul>
+      <p class="contact-text-body">
+        We look forward to collaborating with you and bringing your vision to
+        life. Silverstone Contracting is dedicated to transforming your
+        aspirations into beautifully crafted realities.
       </p>
+
+      <!-- include a link to the projects page for reference  question mark? -->
     </div>
   </div>
 </div>
