@@ -101,9 +101,9 @@
 
     <!-- flash messages -->
 
-    <div class="container">
+    <div class="container d-flex justify-content-center">
       {% for msg in get_flashed_messages() %}
-      <p class="flash-msg">{{ msg }}</p>
+      <p class="flash-msg large-container-default mt-5">{{ msg }}</p>
       {% endfor %}
     </div>
 

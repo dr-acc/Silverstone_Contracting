@@ -73,7 +73,7 @@ def contact():
         More Details: {message_body}""".format(time=time, name=name, email=email, phone=phone, service=service, message_body=message_body)
 
         send_an_email(password=PASSWORD, msg=client_message)
-        flash("email sent")
+        flash("Thank you for your email! We'll be in touch as soon as we can.")
         return render_template("contact.html")
 
     elif request.method == 'GET':
