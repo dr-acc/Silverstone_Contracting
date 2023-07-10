@@ -79,21 +79,21 @@ def contact():
     elif request.method == 'GET':
         return render_template("contact.html")
 
-@app.route("/contacts", methods=["GET", "POST"])
-def contacts():
-    """Return contact page."""
-    form = ContactForm()
-    if request.method == 'POST':
-        if not form.validate():
-            flash('All fields are required.')
-            return render_template('contacts.html', form=form, success=False)
-        else:
-            msg = Message("Silverstone Web Form Request", sender='justferfunan@gmail.com', recipients=['justferfunan@gmail.com'])
-            msg.body = f"From: {form.name.data} <{form.email.data}>\n{form.message.data}"
-            mail.send(msg)
-            return render_template("contacts.html", form=form, success=True)
-    elif request.method == 'GET':
-        return render_template("contacts.html", form=form, success=False)
+# @app.route("/contacts", methods=["GET", "POST"])
+# def contacts():
+#     """Return contact page."""
+#     form = ContactForm()
+#     if request.method == 'POST':
+#         if not form.validate():
+#             flash('All fields are required.')
+#             return render_template('contacts.html', form=form, success=False)
+#         else:
+#             msg = Message("Silverstone Web Form Request", sender='justferfunan@gmail.com', recipients=['justferfunan@gmail.com'])
+#             msg.body = f"From: {form.name.data} <{form.email.data}>\n{form.message.data}"
+#             mail.send(msg)
+#             return render_template("contacts.html", form=form, success=True)
+#     elif request.method == 'GET':
+#         return render_template("contacts.html", form=form, success=False)
 
 
 

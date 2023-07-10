@@ -1,1 +1,1 @@
-export SMTPPASSWORD='ztwfbdblwefbfdck'
+export SMTPPASSWORD='qwhgzwzzgsfsqvkb'
