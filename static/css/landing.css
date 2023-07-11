@@ -53,6 +53,7 @@ div.c-wrapper{
 
 .landing-text-hole p {
   font-size: 36px;
+  line-height: 1.25;
 }
 
 #landing-content > .row {
@@ -74,7 +75,7 @@ div.c-wrapper{
 
   .text-bubble {
     text-align: center;
-    margin-top: 2em;
+    margin-top: 2em;=
   }
 
   .cursive {
