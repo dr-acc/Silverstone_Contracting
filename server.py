@@ -73,27 +73,27 @@ def contact():
         More Details: {message_body}""".format(time=time, name=name, email=email, phone=phone, service=service, message_body=message_body)
 
         send_an_email(password=PASSWORD, msg=client_message)
-        flash("email sent")
+        flash("Thank you for your email! We'll be in touch as soon as we can.")
         return render_template("contact.html")
 
     elif request.method == 'GET':
         return render_template("contact.html")
 
-@app.route("/contacts", methods=["GET", "POST"])
-def contacts():
-    """Return contact page."""
-    form = ContactForm()
-    if request.method == 'POST':
-        if not form.validate():
-            flash('All fields are required.')
-            return render_template('contacts.html', form=form, success=False)
-        else:
-            msg = Message("Silverstone Web Form Request", sender='justferfunan@gmail.com', recipients=['justferfunan@gmail.com'])
-            msg.body = f"From: {form.name.data} <{form.email.data}>\n{form.message.data}"
-            mail.send(msg)
-            return render_template("contacts.html", form=form, success=True)
-    elif request.method == 'GET':
-        return render_template("contacts.html", form=form, success=False)
+# @app.route("/contacts", methods=["GET", "POST"])
+# def contacts():
+#     """Return contact page."""
+#     form = ContactForm()
+#     if request.method == 'POST':
+#         if not form.validate():
+#             flash('All fields are required.')
+#             return render_template('contacts.html', form=form, success=False)
+#         else:
+#             msg = Message("Silverstone Web Form Request", sender='justferfunan@gmail.com', recipients=['justferfunan@gmail.com'])
+#             msg.body = f"From: {form.name.data} <{form.email.data}>\n{form.message.data}"
+#             mail.send(msg)
+#             return render_template("contacts.html", form=form, success=True)
+#     elif request.method == 'GET':
+#         return render_template("contacts.html", form=form, success=False)
 
 
 

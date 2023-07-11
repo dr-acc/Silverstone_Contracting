@@ -3,9 +3,13 @@
 /* Message flashing */
 .flash-msg {
   background-color: #FBB0B0;
+  /* background-color: lightcoral; */
+  /* background-color: #7DA39D; */
+  /* color: white; */
   padding: 0.5em;  
   margin: 0.5em;
   width: fit-content;
+  font-size: 25px;
 }
 
 /*------------ base.html navbar CSS ------------*/

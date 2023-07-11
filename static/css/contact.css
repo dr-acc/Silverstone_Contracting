@@ -30,7 +30,16 @@
     padding: .5em;
 }
 
-#contact-text-body {
-    padding: .5em .5em 1em 1em;
-    font-size: 24px;
+.contact-text-body {
+    line-height: 1.25;
+    padding: .5em .5em 0em 1em;
+    font-size: 25px;
+}
+
+.projects-list {
+    padding-left: 3em;
+}
+
+#contact-text {
+    padding-bottom: 1.25em;
 }
