@@ -6,6 +6,7 @@ from datetime import datetime
 from flask import Flask, render_template, redirect, request, flash, session
 import jinja2
 from emailme import send_an_email
+import json
 
 # from model import db
 # from model import Routine, User, Exercise, PracticeSession, db
@@ -32,7 +33,13 @@ app.config['PRESERVE_CONTEXT_ON_EXCEPTION'] = True
 def landing():
     """Return homepage."""
 
-    return render_template("landing.html")
+    file = open("static/SILVERSTONECAROUSEL.json")
+    carousel_data = json.load(file)
+    file.close
+
+    print(carousel_data["data"])
+
+    return render_template("landing.html", carousel_data=carousel_data["data"])
 
 @app.route("/about")
 def about():
@@ -78,22 +85,6 @@ def contact():
 
     elif request.method == 'GET':
         return render_template("contact.html")
-
-# @app.route("/contacts", methods=["GET", "POST"])
-# def contacts():
-#     """Return contact page."""
-#     form = ContactForm()
-#     if request.method == 'POST':
-#         if not form.validate():
-#             flash('All fields are required.')
-#             return render_template('contacts.html', form=form, success=False)
-#         else:
-#             msg = Message("Silverstone Web Form Request", sender='justferfunan@gmail.com', recipients=['justferfunan@gmail.com'])
-#             msg.body = f"From: {form.name.data} <{form.email.data}>\n{form.message.data}"
-#             mail.send(msg)
-#             return render_template("contacts.html", form=form, success=True)
-#     elif request.method == 'GET':
-#         return render_template("contacts.html", form=form, success=False)
 
 
 
