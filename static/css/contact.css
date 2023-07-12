@@ -18,6 +18,7 @@
 #contact-banner p {
     font-size: 25px;
     margin: 1em;
+    line-height: 1.25;
 }
 
 @media (max-width: 768px) {
