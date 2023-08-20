@@ -7,8 +7,8 @@ import os
 
 PORT = 465  # For SSL
 SMTP_SERVER = "smtp.gmail.com"
-SENDER = "justferfunan@gmail.com"  # Enter your address
-RECEIVER = "justferfunan@gmail.com"  # Enter receiver address
+SENDER = "silverstone.build@gmail.com"  # Enter your address
+RECEIVER = "silverstone.build@gmail.com"  # Enter receiver address
 PASSWORD = os.environ.get('SMTPPASSWORD')
 message = """\
 Subject: Hi there
