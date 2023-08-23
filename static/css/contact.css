@@ -1,6 +1,12 @@
 /*------------ contact.html CSS ------------*/
 
 
+/* ------------ contact form ------------ */
+
+/* .form-control:invalid {
+    border: red;
+} */
+
 /* ------------ contact banner ------------ */
 
 #contact-box {
@@ -33,7 +39,7 @@
 
 .contact-text-body {
     line-height: 1.25;
-    padding: .5em .5em 0em 1em;
+    padding: 1em .5em 0em 1em;
     font-size: 25px;
 }
 
