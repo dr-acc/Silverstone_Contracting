@@ -24,81 +24,81 @@
 
   <!-- contact form -->
 
-  <div
-    class="row g-5 p-2 d-flex flex-row justify-content-evenly"
-  >
-    <div class="col-12 col-md-6">
-      <form class="" action="{{ url_for('contact') }}" method="post">
-        <div class="form-floating mb-4">
-          <input
-            class="form-control"
-            type="text"
-            name="name"
-            placeholder="Name"
-            id="contact-name"
-            required
-          />
-          <label for="contact-name">Name</label>
-        </div>
-        <div class="form-floating mb-4">
-          <input
-            class="form-control"
-            type="email"
-            name="email"
-            placeholder="Email"
-            id="contact-email"
-            required
-          />
-          <label for="contact-email">Email</label>
-          <title class="invalid-feedback">
-            Please enter a valid email address in the following format:
-            email@domain.com
-          </title>
-        </div>
-        <div class="form-floating mb-4">
-          <input
-            class="form-control"
-            type="tel"
-            name="phone"
-            placeholder="Phone Number"
-            id="contact-phone"
-            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-            required
-          />
-          <label for="contact-phone">Phone Number</label>
-          <small>Format: 123-456-7890</small>
-          <title class="invalid-feedback">
-            Please enter phone number in the following format: 123-456-7890
-          </title>
-        </div>
-        <select
-          class="form-control form-select-lg mb-4 w-100"
-          aria-label="Services Select Menu"
-          name="services"
+  <div class="row g-5 px-md-0 pe-md-4 px-2 d-flex flex-row justify-content-evenly">
+    <form
+      class="col-12 col-md-6"
+      action="{{ url_for('contact') }}"
+      method="post"
+    >
+      <div class="form-floating mb-4">
+        <input
+          class="form-control"
+          type="text"
+          name="name"
+          placeholder="Name"
+          id="contact-name"
           required
-        >
-          <option selected>Select Services</option>
-          <option value="Interior">Interior</option>
-          <option value="Exterior">Exterior</option>
-          <option value="Both/Other">Both/Other</option>
-        </select>
-        <textarea
-          class="form-control mb-4"
-          id="contact-more-info"
-          rows="5"
-          placeholder="Tell us more about your project."
-          name="message-body"
+        />
+        <label for="contact-name">Name</label>
+      </div>
+      <div class="form-floating mb-4">
+        <input
+          class="form-control"
+          type="email"
+          name="email"
+          placeholder="Email"
+          id="contact-email"
           required
-        ></textarea>
-        <button
-          type="submit"
-          class="cta-btn large-container-default"
-          src="/contact-submit"
-        >
-          Submit
-        </button>
-      </form>
-    </div>
+        />
+        <label for="contact-email">Email</label>
+        <title class="invalid-feedback">
+          Please enter a valid email address in the following format:
+          email@domain.com
+        </title>
+      </div>
+      <div class="form-floating mb-4">
+        <input
+          class="form-control"
+          type="tel"
+          name="phone"
+          placeholder="Phone Number"
+          id="contact-phone"
+          pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+          required
+        />
+        <label for="contact-phone">Phone Number</label>
+        <small>Format: 123-456-7890</small>
+        <title class="invalid-feedback">
+          Please enter phone number in the following format: 123-456-7890
+        </title>
+      </div>
+      <select
+        class="form-control form-select-lg mb-4 w-100"
+        aria-label="Services Select Menu"
+        name="services"
+        required
+      >
+        <option selected>Select Services</option>
+        <option value="Interior">Interior</option>
+        <option value="Exterior">Exterior</option>
+        <option value="Both/Other">Both/Other</option>
+      </select>
+      <textarea
+        class="form-control mb-4"
+        id="contact-more-info"
+        rows="5"
+        placeholder="Tell us more about your project."
+        name="message-body"
+        required
+      ></textarea>
+      <button
+        type="submit"
+        class="cta-btn large-container-default"
+        src="/contact-submit"
+      >
+        Submit
+      </button>
+    </form>
 
     <!-- end contact form -->
 
