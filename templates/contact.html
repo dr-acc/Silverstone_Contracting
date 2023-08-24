@@ -8,7 +8,7 @@
   id="contact-box"
 >
   <div
-    class="d-flex flex-wrap justify-content-around orange-banner large-container-default"
+    class="d-flex flex-wrap justify-content-md-around justify-content-center orange-banner large-container-default"
     id="contact-banner"
   >
     <div class="col-12 col-md-6 order-md-1">
@@ -24,7 +24,7 @@
 
   <!-- contact form -->
 
-  <div class="row g-5 pe-4">
+  <div class="row g-5 px-md-0 pe-md-4 px-2 d-flex flex-row justify-content-evenly">
     <form
       class="col-12 col-md-6"
       action="{{ url_for('contact') }}"
@@ -51,7 +51,10 @@
           required
         />
         <label for="contact-email">Email</label>
-        <title class="invalid-feedback">Please enter a valid email address in the following format: email@domain.com</title>
+        <title class="invalid-feedback">
+          Please enter a valid email address in the following format:
+          email@domain.com
+        </title>
       </div>
       <div class="form-floating mb-4">
         <input
@@ -65,7 +68,9 @@
         />
         <label for="contact-phone">Phone Number</label>
         <small>Format: 123-456-7890</small>
-        <title class="invalid-feedback">Please enter phone number in the following format: 123-456-7890</title>
+        <title class="invalid-feedback">
+          Please enter phone number in the following format: 123-456-7890
+        </title>
       </div>
       <select
         class="form-control form-select-lg mb-4 w-100"
@@ -104,13 +109,14 @@
       <p class="contact-text-body">
         Whether you're envisioning a grand-scale project, remodeling your home,
         or enhancing your outdoor living spaces, Silverstone is here to turn
-        your dreams into reality.</p>
-        <p class="contact-text-body">
-        With Silverstone Contracting, you can trust
-        that your vision will be brought to life with the highest level of
-        craftsmanship.detailed information about your project. This will help us
-        better understand your needs and provide you with the most accurate and
-        comprehensive solution.</p>
+        your dreams into reality.
+      </p>
+      <p class="contact-text-body">
+        With Silverstone Contracting, you can trust that your vision will be
+        brought to life with the highest level of craftsmanship.detailed
+        information about your project. This will help us better understand your
+        needs and provide you with the most accurate and comprehensive solution.
+      </p>
       <ul class="contact-text-body projects-list">
         <li>Large construction projects</li>
         <li>Home remodeling and renovations</li>
