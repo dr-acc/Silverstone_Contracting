@@ -14,7 +14,7 @@ import json
 # from datetime import datetime
 
 app = Flask(__name__)
-app.secret_key = 's0m3TH!ng'
+app.secret_key = os.environ['SECRET_KEY']
 PASSWORD = os.environ['SMTPPASSWORD']
 # print(PASSWORD)
 
