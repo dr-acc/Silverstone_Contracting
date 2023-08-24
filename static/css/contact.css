@@ -21,6 +21,12 @@
     padding: 1em;
 }
 
+@media (max-width: 768px) {
+    #contact-banner {
+        margin: 0em .5em 2em .5em;
+    }
+}
+
 #contact-banner p {
     font-size: 25px;
     margin: 1em;
